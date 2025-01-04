@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Path to 100 - Tietosuojaseloste</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #444;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            display: none;
+        }
+        section.active {
+            display: block;
+        }
+    </style>
+    <script>
+        function switchLanguage(language) {
+            document.querySelectorAll("section").forEach(section => {
+                section.classList.remove("active");
+            });
+            document.getElementById(language).classList.add("active");
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Path to 100</h1>
+        <h2>Tietosuojaseloste | Privacy Policy | Integritetspolicy</h2>
+
+        <nav>
+            <a href="#" onclick="switchLanguage('fi')">Suomi</a>
+            <a href="#" onclick="switchLanguage('en')">English</a>
+            <a href="#" onclick="switchLanguage('sv')">Svenska</a>
+        </nav>
+
+        <!-- Finnish -->
+        <section id="fi" class="active">
+            <h2>Tietosuojaseloste</h2>
+            <p>Viimeksi päivitetty: 4.1.2025</p>
+            <p><strong>Path to 100</strong> sitoutuu suojaamaan käyttäjiensä yksityisyyttä. Tämä tietosuojaseloste kuvaa, miten peli käsittelee käyttäjätietoja.</p>
+            <h3>1. Mitä tietoja kerätään</h3>
+            <p>Peli ei kerää tietoja ilman käyttäjän lupaa. Pelaajalla on mahdollisuus tallentaa pelin läpäisemisen jälkeen seuraavat tiedot: peliaika, peruutukset ja nimimerkki. Käyttäjälle annetaan poistokoodi tietojen poistamista varten.</p>
+            <h3>2. Yhteystiedot</h3>
+            <p>Kysymykset ja yhteydenotot: <a href="mailto:jere.luomanmaki@outlook.com">jere.luomanmaki@outlook.com</a></p>
+        </section>
+
+        <!-- English -->
+        <section id="en">
+            <h2>Privacy Policy</h2>
+            <p>Last updated: 01/04/2025</p>
+            <p><strong>Path to 100</strong> is committed to protecting user privacy. This privacy policy explains how the game handles user data.</p>
+            <h3>1. Data Collected</h3>
+            <p>The game does not collect any data without user consent. After completing the game, the player may save the following data: game time, undos, and nickname. A unique deletion code is provided for data removal.</p>
+            <h3>2. Contact Information</h3>
+            <p>Questions or inquiries: <a href="mailto:jere.luomanmaki@outlook.com">jere.luomanmaki@outlook.com</a></p>
+        </section>
+
+        <!-- Swedish -->
+        <section id="sv">
+            <h2>Integritetspolicy</h2>
+            <p>Senast uppdaterad: 2025-01-04</p>
+            <p><strong>Path to 100</strong> är engagerad i att skydda användarnas integritet. Denna integritetspolicy förklarar hur spelet hanterar användardata.</p>
+            <h3>1. Insamlad data</h3>
+            <p>Spelet samlar inte in någon data utan användarens samtycke. Efter att ha klarat spelet kan användaren spara följande data: speltid, ångringar och smeknamn. En unik raderingskod tillhandahålls för att ta bort data.</p>
+            <h3>2. Kontaktinformation</h3>
+            <p>Frågor eller förfrågningar: <a href="mailto:jere.luomanmaki@outlook.com">jere.luomanmaki@outlook.com</a></p>
+        </section>
+    </div>
+</body>
+</html>
