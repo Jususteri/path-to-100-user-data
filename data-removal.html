@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Path to 100 - Data Removal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #444;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            display: none;
+        }
+        section.active {
+            display: block;
+        }
+    </style>
+    <script>
+        function switchLanguage(language) {
+            document.querySelectorAll("section").forEach(section => {
+                section.classList.remove("active");
+            });
+            document.getElementById(language).classList.add("active");
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Path to 100</h1>
+        <h2>Data Removal | Tietojen poisto | Ta bort data</h2>
+
+        <nav>
+            <a href="#" onclick="switchLanguage('fi')">Suomi</a>
+            <a href="#" onclick="switchLanguage('en')">English</a>
+            <a href="#" onclick="switchLanguage('sv')">Svenska</a>
+        </nav>
+
+        <!-- Finnish -->
+        <section id="fi" class="active">
+            <h2>Tietojen poisto</h2>
+            <p>Käyttäjät voivat poistaa tietonsa seuraamalla näitä ohjeita:</p>
+            <ol>
+                <li>Avaa sovellus.</li>
+                <li>Siirry päävalikosta kohtaan <strong>100-Kerho</strong>.</li>
+                <li>Paina nappia <strong>Poista tietosi</strong>.</li>
+                <li>Syötä uniikki poistokoodisi.</li>
+                <li>Vahvista poisto poistaaksesi tietosi tietokannasta.</li>
+            </ol>
+            <p>Jos tarvitset apua, ota yhteyttä osoitteeseen <a href="mailto:jere.luomanmaki@outlook.com">jere.luomanmaki@outlook.com</a>.</p>
+        </section>
+
+        <!-- English -->
+        <section id="en">
+            <h2>Data Removal</h2>
+            <p>Users can delete their data by following these steps:</p>
+            <ol>
+                <li>Open the app.</li>
+                <li>Navigate to <strong>100-Club</strong> from the main menu.</li>
+                <li>Press the <strong>Delete Your Data</strong> button.</li>
+                <li>Enter your unique deletion code.</li>
+                <li>Confirm the deletion to remove your data from the database.</li>
+            </ol>
+            <p>If you need assistance, please contact <a href="mailto:jere.luomanmaki@outlook.com">jere.luomanmaki@outlook.com</a>.</p>
+        </section>
+
+        <!-- Swedish -->
+        <section id="sv">
+            <h2>Ta bort data</h2>
+            <p>Användare kan ta bort sina data genom att följa dessa steg:</p>
+            <ol>
+                <li>Öppna appen.</li>
+                <li>Gå till <strong>100-Klubben</strong> från huvudmenyn.</li>
+                <li>Tryck på knappen <strong>Ta bort dina data</strong>.</li>
+                <li>Ange din unika raderingskod.</li>
+                <li>Bekräfta borttagningen för att ta bort dina data från databasen.</li>
+            </ol>
+            <p>Om du behöver hjälp, vänligen kontakta <a href="mailto:jere.luomanmaki@outlook.com">jere.luomanmaki@outlook.com</a>.</p>
+        </section>
+    </div>
+</body>
+</html>
