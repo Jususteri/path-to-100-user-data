@@ -23,15 +23,16 @@
         }
         nav {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             margin-bottom: 20px;
         }
         nav a {
-            margin: 0 10px;
+            margin: 5px 10px;
             text-decoration: none;
             color: #007bff;
             font-weight: bold;
-            font-size: 30px; 
+            font-size: 22px;
             padding: 10px;
         }
         nav a:hover {
@@ -56,21 +57,23 @@
 <body>
     <div class="container">
         <h1>Path to 100</h1>
-        <h2>Data Removal | Tietojen poisto | Ta bort data</h2>
+        <h2>Data Removal | Tietojen poisto | Ta bort data | Andmete kustutamine</h2>
 
         <nav>
             <a href="#" onclick="switchLanguage('fi')">Suomi</a>
             <a href="#" onclick="switchLanguage('en')">English</a>
             <a href="#" onclick="switchLanguage('sv')">Svenska</a>
+            <a href="#" onclick="switchLanguage('ee')">Eesti</a>
         </nav>
 
         <!-- Finnish -->
         <section id="fi" class="active">
             <h2>Tietojen poisto</h2>
+            <p>Viimeksi päivitetty: 14.7.2025</p>
             <p>Käyttäjät voivat poistaa tietonsa seuraamalla näitä ohjeita:</p>
             <ol>
                 <li>Avaa sovellus.</li>
-                <li>Siirry päävalikosta kohtaan <strong>100-Kerho</strong>.</li>
+                <li>Siirry päävalikosta kohtaan <strong>Satakerho</strong> tai <strong>Kellokerho</strong>.</li>
                 <li>Paina nappia <strong>Poista tietosi</strong>.</li>
                 <li>Syötä uniikki poistokoodisi.</li>
                 <li>Vahvista poisto poistaaksesi tietosi tietokannasta.</li>
@@ -81,10 +84,11 @@
         <!-- English -->
         <section id="en">
             <h2>Data Removal</h2>
+            <p>Last updated: 14/07/2025</p>
             <p>Users can delete their data by following these steps:</p>
             <ol>
                 <li>Open the app.</li>
-                <li>Navigate to <strong>100-Club</strong> from the main menu.</li>
+                <li>Navigate to <strong>Hundred Club</strong> or <strong>Clock Club</strong> from the main menu.</li>
                 <li>Press the <strong>Delete Your Data</strong> button.</li>
                 <li>Enter your unique deletion code.</li>
                 <li>Confirm the deletion to remove your data from the database.</li>
@@ -95,15 +99,31 @@
         <!-- Swedish -->
         <section id="sv">
             <h2>Ta bort data</h2>
+            <p>Senast uppdaterad: 2025-07-14</p>
             <p>Användare kan ta bort sina data genom att följa dessa steg:</p>
             <ol>
                 <li>Öppna appen.</li>
-                <li>Gå till <strong>100-Klubben</strong> från huvudmenyn.</li>
+                <li>Gå till <strong>Hundraklubben</strong> eller <strong>Klockklubben</strong> från huvudmenyn.</li>
                 <li>Tryck på knappen <strong>Ta bort dina data</strong>.</li>
                 <li>Ange din unika raderingskod.</li>
                 <li>Bekräfta borttagningen för att ta bort dina data från databasen.</li>
             </ol>
             <p>Om du behöver hjälp, vänligen kontakta <a href="mailto:jere.luomanmaki@outlook.com">jere.luomanmaki@outlook.com</a>.</p>
+        </section>
+
+        <!-- Estonian -->
+        <section id="ee">
+            <h2>Andmete kustutamine</h2>
+            <p>Viimati uuendatud: 14.07.2025</p>
+            <p>Kasutajad saavad oma andmed kustutada järgides neid samme:</p>
+            <ol>
+                <li>Ava rakendus.</li>
+                <li>Vali põhimenüüst <strong>Sajaklubi</strong> või <strong>Kellaklubi</strong>.</li>
+                <li>Vajuta nuppu <strong>Kustuta oma andmed</strong>.</li>
+                <li>Sisesta oma unikaalne kustutamiskood.</li>
+                <li>Kinnita kustutamine, et eemaldada oma andmed andmebaasist.</li>
+            </ol>
+            <p>Kui vajad abi, võta ühendust: <a href="mailto:jere.luomanmaki@outlook.com">jere.luomanmaki@outlook.com</a>.</p>
         </section>
     </div>
 </body>
